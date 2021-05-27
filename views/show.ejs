@@ -12,6 +12,9 @@
         <%=recipe.ingredients %> </br>
         <%=recipe.instructions %> </br>
         <a href="/recipes/<%=recipe.id; %>/edit">Edit</a>
+        <form action="/recipes/<%=recipe.id; %>?_method=DELETE" method="POST">
+            <input type="submit" value="Remove Recipe"/>
+        </form>
     <nav>
         <a href="/recipes">Back to Recipes Index</a>
     </nav>

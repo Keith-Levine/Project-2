@@ -31,6 +31,12 @@ router.get('/:id', (req, res)=>{
     });
 });
 
+router.delete('/:id', (req, res)=>{
+    Recipe.findByIdAndRemove(req.params.id, (err, data)=>{
+        res.redirect('/recipes');
+    });
+});
+
 router.get('/:id/edit', (req, res)=>{
     Recipe.findById(req.params.id, (err, foundRecipe)=>{ 
         res.render(
