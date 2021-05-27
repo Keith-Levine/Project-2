@@ -31,4 +31,21 @@ router.get('/:id', (req, res)=>{
     });
 });
 
+router.get('/:id/edit', (req, res)=>{
+    Recipe.findById(req.params.id, (err, foundRecipe)=>{ 
+        res.render(
+    		'edit.ejs',
+    		{
+    			recipe: foundRecipe 
+    		}
+    	);
+    });
+});
+
+router.put('/:id', (req, res)=>{
+    Recipe.findOneAndUpdate(req.params.id, req.body, {new:true}, (err, updatedModel)=>{
+        res.redirect('/recipes');
+    });
+});
+
 module.exports = router;
