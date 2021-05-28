@@ -9,13 +9,14 @@ require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 const MONGODBURI = process.env.MONGODBURI || 'mongodb://localhost:27017/'+ `recipe`;
-
+console.log(MONGODBURI)
 mongoose.connect(MONGODBURI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false
 })
 
+app.use(express.json())
 app.use(express.urlencoded({extended:true}));
 app.use(
     session({
