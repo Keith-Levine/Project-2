@@ -14,6 +14,7 @@
         <% } else { %>
             <img src=<%=recipe.img %>></br>
         <% } %></br> 
+        <%=recipe.tags %> </br>
         <%=recipe.ingredients %> </br>
         <%=recipe.instructions %> </br>
         <a href="/recipes/<%=recipe.id; %>/edit">Edit</a>
