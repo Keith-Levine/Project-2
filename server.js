@@ -8,7 +8,7 @@ require('dotenv').config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const MONGODBURI = process.env.MONGODBURI
+const MONGODBURI = process.env.MONGODBURI || 'mongodb://localhost:27017/'+ `recipe`;
 
 app.use(express.urlencoded({extended:true}));
 app.use(
