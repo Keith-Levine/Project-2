@@ -9,11 +9,11 @@
 <body>
     <h1>Recipe Show Page</h1>
         <%=recipe.name %> </br>
-        <!-- <% if(recipe.image !== "undefined"){ %> -->
-            <img src=<%=recipe.img %>>
-        <!-- <% } else { %>
-            Nothing
-        <% } %></br> -->
+        <% if(recipe.img === ""){ %>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/480px-No_image_available.svg.png">
+        <% } else { %>
+            <img src=<%=recipe.img %>></br>
+        <% } %></br> 
         <%=recipe.ingredients %> </br>
         <%=recipe.instructions %> </br>
         <a href="/recipes/<%=recipe.id; %>/edit">Edit</a>
