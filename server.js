@@ -25,6 +25,10 @@ mongoose.connection.once('open', ()=> {
     console.log('connected to mongo');
 });
 
+app.get('/admin', (req, res)=>{
+  res.render('adminLogin.ejs');
+});
+
 const recipesController = require('./controllers/reciperoutes.js');
 
 app.use('/recipes', recipesController);
