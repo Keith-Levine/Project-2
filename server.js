@@ -32,6 +32,10 @@ mongoose.connection.once('open', ()=> {
     console.log('connected to mongo');
 });
 
+app.get('/', (req, res)=>{
+  res.render('home.ejs');
+});
+
 app.get('/admin', (req, res)=>{
   res.render('adminLogin.ejs');
 });
