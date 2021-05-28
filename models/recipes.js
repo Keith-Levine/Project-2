@@ -5,7 +5,7 @@ const recipeSchema = new mongoose.Schema({
     img: String,
     ingredients:  { type: String, required: true },
     instructions:  { type: String, required: true }
-});
+}, { timestamps: true });
 
 const Recipe = mongoose.model('Recipe', recipeSchema);
 

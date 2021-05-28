@@ -9,7 +9,7 @@ require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 const MONGODBURI = process.env.MONGODBURI || 'mongodb://localhost:27017/'+ `recipe`;
-console.log(MONGODBURI)
+
 mongoose.connect(MONGODBURI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -43,6 +43,10 @@ app.get('/admin', (req, res)=>{
 const recipesController = require('./controllers/reciperoutes.js');
 
 app.use('/recipes', recipesController);
+
+const nutritionController = require('./controllers/nutritionRoutes.js');
+
+app.use('/nutrition', nutritionController);
 
 app.listen(PORT, ()=>{
     console.log('listening on ' + PORT );
