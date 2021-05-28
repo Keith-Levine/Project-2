@@ -27,12 +27,6 @@ mongoose.connect(`mongodb://localhost:27017/recipe`, {
     useFindAndModify: false
 })
 
-// mongoose.connect(`mongodb://localhost:27017/foodLog`, {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true,
-//     useFindAndModify: false
-// })
-
 mongoose.connection.once('open', ()=> {
     console.log('connected to mongo');
 });
@@ -40,10 +34,6 @@ mongoose.connection.once('open', ()=> {
 const recipesController = require('./controllers/reciperoutes.js');
 
 app.use('/recipes', recipesController);
-
-// const foodLogsController = require('./controllers/foodLogRoutes.js');
-
-// app.use('/foodlogs', foodLogsController);
 
 app.listen(PORT, ()=>{
     console.log('listening on ' + PORT );
