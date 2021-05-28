@@ -21,12 +21,6 @@ app.use(
 
 app.use(methodOverride('_method'));
 
-mongoose.connect(`mongodb://localhost:27017/recipe`, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false
-})
-
 mongoose.connection.once('open', ()=> {
     console.log('connected to mongo');
 });

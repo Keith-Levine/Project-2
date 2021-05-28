@@ -10,13 +10,9 @@
     <h1>Edit Fruit Page</h1>
     <form action="/recipes/<%=recipe.id%>?_method=PUT" method="POST">
         Name: <input type="text" name="name" value="<%=recipe.name%>" size=55 /><br/>
-        Image Link: <% if(recipe.image === true){ %>
-            <input type="url" name="img" value="<%=recipe.img%>" size=55 /><br/>
-        <% } else { %>
-            <input type="url" name="img" value="No Image Currently" size=55 /><br/>
-        <% } %>
+        Image Link: <input type="url" name="img" value="<%=recipe.img%>" size=55 /><br/>
         Ingredients: <input type="text" name="ingredients" value="<%=recipe.ingredients%>" size=55 /><br/>
-        Instructions: <textarea name="instructions" cols="50" rows="5">
+        Instructions: <textarea name="instructions" value="<%=recipe.instructions%>" cols="50" rows="5">
         </textarea><br/>
         <input type="submit" name="" value="Submit Changes"/>
     </form>

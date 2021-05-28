@@ -5,6 +5,12 @@ const methodOverride = require('method-override');
 
 const Recipe = require('../models/recipes.js')
 
+mongoose.connect(`mongodb://localhost:27017/recipe`, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useFindAndModify: false
+})
+
 router.get('/', (req, res)=>{
     Recipe.find({}, (error, allRecipes)=>{
         res.render('index.ejs', {
