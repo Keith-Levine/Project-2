@@ -1,10 +1,9 @@
 const mongoose = require('mongoose');
 
 const tagSchema = new mongoose.Schema({
-    info: String,
+    // info: String,
     tags: {
-        type:  mongoose.Schema.Types.ObjectId,
-        ref: "Recipe"
+        type: String,
     },
 });
 

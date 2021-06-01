@@ -3,7 +3,9 @@ const router = express.Router();
 const mongoose = require('mongoose');
 const methodOverride = require('method-override');
 
-const Recipe = require('../models/recipes.js')
+const Recipe = require('../models/recipes.js');
+const Tag = require('../models/tags.js');
+const { populate } = require('../models/recipes.js');
 
 router.get('/', (req, res)=>{
     Recipe.find({}, (error, allRecipes)=>{
@@ -18,9 +20,31 @@ router.get('/new', (req, res)=>{
 });
 
 router.post('/', (req, res)=>{
-    Recipe.create(req.body, (error, createdRecipe)=>{
-        res.redirect('/recipes');
-    });
+    // const recipe = req.body
+    Tag.create(req.body, (error, createdTag)=>{
+        // const thisTag = createdTag
+        // console.log(thisTag)
+        // console.log(createdTag)
+        // console.log(req.body)
+        console.log(createdTag)
+        delete req.body.tags
+        Recipe.create(req.body, (error, createdRecipe)=>{
+            createdRecipe.tags.push(createdTag);
+            createdRecipe.save()
+            res.redirect('/recipes')
+        });
+        // recipe.populate('tags').exec(createdTag.id, (error, updatedRecipe)=>{
+        //     console.log(updatedRecipe)
+        //     // .exec((err, createdTag)=>{
+        //     //     if (err){
+        //     //         console.log(err)
+        //     //     } else {
+        //     //         console.log(createdTag.id)
+        //     //     }
+        //     // })
+            
+        //     })
+    })
 });
 
 router.get('/:id', (req, res)=>{
