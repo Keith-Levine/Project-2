@@ -22,10 +22,6 @@ router.get('/new', (req, res)=>{
 router.post('/', (req, res)=>{
     // const recipe = req.body
     Tag.create(req.body, (error, createdTag)=>{
-        // const thisTag = createdTag
-        // console.log(thisTag)
-        // console.log(createdTag)
-        // console.log(req.body)
         console.log(createdTag)
         delete req.body.tags
         Recipe.create(req.body, (error, createdRecipe)=>{
@@ -33,17 +29,6 @@ router.post('/', (req, res)=>{
             createdRecipe.save()
             res.redirect('/recipes')
         });
-        // recipe.populate('tags').exec(createdTag.id, (error, updatedRecipe)=>{
-        //     console.log(updatedRecipe)
-        //     // .exec((err, createdTag)=>{
-        //     //     if (err){
-        //     //         console.log(err)
-        //     //     } else {
-        //     //         console.log(createdTag.id)
-        //     //     }
-        //     // })
-            
-        //     })
     })
 });
 

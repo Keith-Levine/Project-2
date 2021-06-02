@@ -27,6 +27,7 @@ app.use(
   )
 
 app.use(methodOverride('_method'));
+app.use(express.static('public'));
 
 mongoose.connection.once('open', ()=> {
     console.log('connected to mongo');

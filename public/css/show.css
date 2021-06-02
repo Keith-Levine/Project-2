@@ -1,0 +1,31 @@
+body {
+    background-color: aqua;
+}    
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    color: rgb(162, 13, 10);
+}
+
+img {
+    max-width: 450px;
+    height: 450px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+h1 {
+    display: flex; 
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-content: center;
+}

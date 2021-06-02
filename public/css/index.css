@@ -1,0 +1,40 @@
+body {
+    background-color: aqua;
+}
+
+h1 {
+   display: flex; 
+   justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    color: rgb(162, 13, 10);
+}
+
+img {
+    width:  200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 40px;
+}

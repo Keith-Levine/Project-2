@@ -5,20 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
-    <h1>Recipes Index Page</h1>
+    <h1>Recipes Index</h1>
     <nav>
-        <a href="/recipes/new">Add A New Recipe</a>
+        <a href="/recipes/new" class="button">Add A New Recipe</a>
     </nav>
+    <div class="container">
     <ul>
         <% for(let i = 0; i < recipes.length; i++){ %>
             <li>
                 <a href="/recipes/<%=recipes[i].id; %>">
-                    <%=recipes[i].name; %>
+                    <%=recipes[i].name; %></br>
+                    <% if(recipes[i].img === ""){ %>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/480px-No_image_available.svg.png">
+                    <% } else { %>
+                        <img src=<%=recipes[i].img %>>
+                    <% } %></br> 
                 </a>
             </li>
         <% } %>
     </ul>
+    </div>
 </body>
 </html>
