@@ -18,4 +18,4 @@ As a user, I should be able to delete a recipe.
 
 <h2>App Link</h2>
 
-[Keke's Cooking Page](https://keith-levine.github.io/)
+[Keke's Cooking Page](https://enigmatic-everglades-87572.herokuapp.com/)
