@@ -6,27 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%=recipe.name %></title>
     <link rel="stylesheet" href="/css/show.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Recipe Show Page</h1>
+    <h1><%=recipe.name %></h1>
     <nav>
         <a href="/recipes">Back to Recipes Index</a>
     </nav>
         <div class="container">
-        <%=recipe.name %> </br>
         <% if(recipe.img === ""){ %>
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/480px-No_image_available.svg.png">
         <% } else { %>
             <img src=<%=recipe.img %>></br>
         <% } %></br> 
-        <%=recipe.tags %> </br>
         <%=recipe.ingredients %> </br>
         <%=recipe.instructions %> </br>
+        </div>
         <a href="/recipes/<%=recipe.id; %>/edit">Edit</a>
         <form action="/recipes/<%=recipe.id; %>?_method=DELETE" method="POST">
             <input type="submit" value="Remove Recipe"/>
         </form>
-    </div>
+    
 
 </body>
 </html>

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>Recipes Index</h1>
@@ -17,13 +19,13 @@
         <% for(let i = 0; i < recipes.length; i++){ %>
             <li>
                 <a href="/recipes/<%=recipes[i].id; %>">
-                    <%=recipes[i].name; %></br>
+                    <%=recipes[i].name; %></a>
                     <% if(recipes[i].img === ""){ %>
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/480px-No_image_available.svg.png">
                     <% } else { %>
                         <img src=<%=recipes[i].img %>>
                     <% } %></br> 
-                </a>
+                
             </li>
         <% } %>
     </ul>

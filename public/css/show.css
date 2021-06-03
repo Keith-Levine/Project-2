@@ -1,14 +1,28 @@
 body {
-    background-color: aqua;
-}    
+    background-color: rgb(242,	241, 228);	
+}
+
+h1 {
+   display: flex; 
+   justify-content: center;
+   font-family: 'Roboto', sans-serif;
+   font-size: 72pt;
+}
+
+nav {
+    padding-left: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: xx-large;
+}
 
 a {
     text-decoration: none;
-    color: blue;
+    color: rgb(0, 62, 53);
+    font-family: 'Roboto', sans-serif;
 }
 
 a:hover {
-    color: rgb(162, 13, 10);
+    color: black;
 }
 
 img {
@@ -18,14 +32,11 @@ img {
     object-fit: cover;
 }
 
-h1 {
-    display: flex; 
-    justify-content: center;
-}
-
 .container {
     display: flex;
     justify-content: space-evenly;
-    flex-direction: column;
-    align-content: center;
+    flex-direction: row;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
 }
