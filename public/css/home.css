@@ -25,3 +25,9 @@ a:hover {
     display: flex;
     justify-content: center;
 }
+
+form {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+}

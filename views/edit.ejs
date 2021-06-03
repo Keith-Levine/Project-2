@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Edit <%=recipe.name%></title>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Edit Fruit Page</h1>
+    <h1>Editing <%=recipe.name%></h1>
+    <a href="/recipes/<%=recipe.id; %>">Back to <%=recipe.name%> Page</a>
     <form action="/recipes/<%=recipe.id%>?_method=PUT" method="POST">
         Name: <input type="text" name="name" value="<%=recipe.name%>" size=55 /><br/>
         Image Link: <input type="url" name="img" value="<%=recipe.img%>" size=55 /><br/>

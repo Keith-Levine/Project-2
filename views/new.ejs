@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>New Recipe</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>New Recipe Page</h1>
+    <h1>Create A Recipe</h1>
+    <nav>
+        <a href="/recipes">Back to Recipes Index</a>
+    </nav>
     <form action="/recipes" method="POST">
         Name: <input type="text" name="name" size=55 />
         <br>
@@ -21,8 +27,6 @@
         <br>
         <input type="submit" name="" value="Create Recipe"/>
     </form>
-    <nav>
-        <a href="/recipes">Back to Recipes Index</a>
-    </nav>
+
 </body>
 </html>
