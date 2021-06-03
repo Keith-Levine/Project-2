@@ -44,6 +44,8 @@ img {
     justify-content: center;
     padding-bottom: 25px;
     padding-top: 25px;
+    background-color: cornsilk;
+    border-radius: 10%;
 }
 
 .info {
@@ -52,5 +54,8 @@ img {
     display: flex;
     justify-content: center;
     padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: cornsilk;
+    border-radius: 10%;
 }
 
