@@ -41,5 +41,5 @@ img {
     font-family: 'Roboto', sans-serif;
     font-size: large;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
