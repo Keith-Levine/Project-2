@@ -43,3 +43,10 @@ img {
     display: flex;
     justify-content: center;
 }
+
+.ingredients {
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+}

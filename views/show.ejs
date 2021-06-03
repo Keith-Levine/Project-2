@@ -13,7 +13,11 @@
     <nav>
         <a href="/recipes">Back to Recipes Index</a>
     </nav>
-        <div class="container">
+        <div class="ingredients">
+        <%=recipe.ingredients %></br> 
+        </div>
+        <div class="container"> 
+          
         <% if(recipe.img === ""){ %>
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/480px-No_image_available.svg.png">
         <% } else { %>
@@ -21,7 +25,6 @@
         <% } %></br> 
         </div>
         <div class="info">
-        <%=recipe.ingredients %>
         <%=recipe.instructions %>
         </div>
         <a href="/recipes/<%=recipe.id; %>/edit">Edit</a>
