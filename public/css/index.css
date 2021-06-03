@@ -44,7 +44,10 @@ li {
     align-items: center;
     flex-direction: column;
     padding: 40px;
+    margin: 40px;
     line-height: 50px;
     font-family: 'Roboto', sans-serif;
     font-size: x-large;
+    background-color: cornsilk;
+    border-radius: 10%;
 }
