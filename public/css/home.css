@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(242,	241, 228);	
+}
+
+h1 {
+   display: flex; 
+   justify-content: center;
+   font-family: 'Roboto', sans-serif;
+   font-size: 72pt;
+}
+
+a {
+    color: rgb(0, 62, 53);
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+}
+
+a:hover {
+    color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}

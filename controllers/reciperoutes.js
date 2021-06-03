@@ -20,16 +20,10 @@ router.get('/new', (req, res)=>{
 });
 
 router.post('/', (req, res)=>{
-    // const recipe = req.body
-    Tag.create(req.body, (error, createdTag)=>{
-        console.log(createdTag)
-        delete req.body.tags
         Recipe.create(req.body, (error, createdRecipe)=>{
-            createdRecipe.tags.push(createdTag);
-            createdRecipe.save()
             res.redirect('/recipes')
         });
-    })
+    
 });
 
 router.get('/:id', (req, res)=>{
@@ -58,8 +52,11 @@ router.get('/:id/edit', (req, res)=>{
 });
 
 router.put('/:id', (req, res)=>{
-    Recipe.findOneAndUpdate(req.params.id, req.body, {new:true}, (err, updatedModel)=>{
-        res.redirect('/recipes');
+    Recipe.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, updatedRecipe)=>{
+        console.log(req.body)
+        console.log(updatedRecipe)
+        console.log(req.params.id)
+        res.redirect('/recipes/'+req.params.id);
     });
 });
 

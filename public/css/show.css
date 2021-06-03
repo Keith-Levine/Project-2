@@ -37,16 +37,19 @@ img {
     justify-content: center;
 }
 
-.info {
-    font-family: 'Roboto', sans-serif;
-    font-size: large;
-    display: flex;
-    justify-content: center;
-}
-
 .ingredients {
     font-family: 'Roboto', sans-serif;
     font-size: large;
     display: flex;
     justify-content: center;
+    padding-bottom: 25px;
 }
+
+.info {
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+
