@@ -21,11 +21,10 @@
                 <a href="/recipes/<%=recipes[i].id; %>">
                     <%=recipes[i].name; %></a>
                     <% if(recipes[i].img === ""){ %>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/480px-No_image_available.svg.png">
+                        <img src="https://thumbs.dreamstime.com/b/no-food-drink-forbidden-sign-modern-round-sticker-195721302.jpg">
                     <% } else { %>
                         <img src=<%=recipes[i].img %>>
                     <% } %></br> 
-                
             </li>
         <% } %>
     </ul>
