@@ -19,12 +19,10 @@
         <% } else { %>
             <img src=<%=recipe.img %>></br>
         <% } %></br> 
-        <div class="ingredients">
-            <%=recipe.ingredients %> </br>
         </div>
-        <div class="ingredients">
-        <%=recipe.instructions %> </br>
-        </div>
+        <div class="info">
+        <%=recipe.ingredients %>
+        <%=recipe.instructions %>
         </div>
         <a href="/recipes/<%=recipe.id; %>/edit">Edit</a>
         <form action="/recipes/<%=recipe.id; %>?_method=DELETE" method="POST">
