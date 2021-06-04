@@ -15,20 +15,20 @@
         <a href="/recipes/new" class="button">Add A New Recipe</a>
     </nav>
     <div class="container">
-    <ul>
-        <% for(let i = 0; i < recipes.length; i++){ %>
-            <li>
-                <a href="/recipes/<%=recipes[i].id; %>">
-                    <%=recipes[i].name; %> </a>
+        <ul>
+            <% for(let i = 0; i < recipes.length; i++){ %>
+                <li>
                     <a href="/recipes/<%=recipes[i].id; %>">
-                    <% if(recipes[i].img === ""){ %>
-                        <img src="https://thumbs.dreamstime.com/b/no-food-drink-forbidden-sign-modern-round-sticker-195721302.jpg">
-                    <% } else { %>
-                        <img src=<%=recipes[i].img %>>
-                    <% } %></br></a>
-            </li>
-        <% } %>
-    </ul>
+                        <%=recipes[i].name; %> </a>
+                    <a href="/recipes/<%=recipes[i].id; %>">
+                        <% if(recipes[i].img === ""){ %>
+                            <img src="https://thumbs.dreamstime.com/b/no-food-drink-forbidden-sign-modern-round-sticker-195721302.jpg">
+                        <% } else { %>
+                            <img src=<%=recipes[i].img %>>
+                        <% } %></br></a>
+                </li>
+            <% } %>
+        </ul>
     </div>
 </body>
 </html>

@@ -23,11 +23,18 @@ a:hover {
 
 .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 form {
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
+}
+
+img.right {
+	transform: scaleX(-1);
+	filter: FlipH;
+	-ms-filter: "FlipH";
+	float: none;
 }

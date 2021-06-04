@@ -37,17 +37,9 @@ app.get('/', (req, res)=>{
   res.render('home.ejs');
 });
 
-app.get('/admin', (req, res)=>{
-  res.render('adminLogin.ejs');
-});
-
 const recipesController = require('./controllers/reciperoutes.js');
 
 app.use('/recipes', recipesController);
-
-const nutritionController = require('./controllers/nutritionRoutes.js');
-
-app.use('/nutrition', nutritionController);
 
 app.listen(PORT, ()=>{
     console.log('listening on ' + PORT );

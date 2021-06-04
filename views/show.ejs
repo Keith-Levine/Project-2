@@ -14,23 +14,21 @@
         <a href="/recipes">Back to Recipes Index</a>
     </nav>
         <div class="ingredients">
-        <%=recipe.ingredients %></br> 
+            <%=recipe.ingredients %></br> 
         </div>
         <div class="container"> 
-        <% if(recipe.img === ""){ %>
-            <img src="https://thumbs.dreamstime.com/b/no-food-drink-forbidden-sign-modern-round-sticker-195721302.jpg">
-        <% } else { %>
-            <img src=<%=recipe.img %>></br>
-        <% } %></br> 
+            <% if(recipe.img === ""){ %>
+                <img src="https://thumbs.dreamstime.com/b/no-food-drink-forbidden-sign-modern-round-sticker-195721302.jpg">
+            <% } else { %>
+                <img src=<%=recipe.img %>></br>
+            <% } %></br> 
         </div>
         <div class="info">
-        <%=recipe.instructions %>
+            <%=recipe.instructions %>
         </div>
         <a href="/recipes/<%=recipe.id; %>/edit">Edit</a>
         <form action="/recipes/<%=recipe.id; %>?_method=DELETE" method="POST">
             <input type="submit" value="Remove Recipe"/>
         </form>
-    
-
 </body>
 </html>
