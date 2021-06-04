@@ -32,6 +32,10 @@ form {
     flex-direction: column;
 }
 
+img {
+    border-radius: 5%;
+}
+
 img.right {
 	transform: scaleX(-1);
 	filter: FlipH;
