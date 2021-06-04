@@ -5,7 +5,6 @@ const methodOverride = require('method-override');
 
 const Recipe = require('../models/recipes.js');
 const Tag = require('../models/tags.js');
-const { populate } = require('../models/recipes.js');
 
 router.get('/', (req, res)=>{
     Recipe.find({}, (error, allRecipes)=>{
