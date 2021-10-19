@@ -22,7 +22,6 @@ router.post('/', (req, res)=>{
         Recipe.create(req.body, (error, createdRecipe)=>{
             res.redirect('/recipes')
         });
-    
 });
 
 router.get('/:id', (req, res)=>{

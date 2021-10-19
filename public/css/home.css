@@ -1,44 +1,68 @@
 body {
-    background-color: rgb(242,	241, 228);	
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #eee;
+    background-color: rgb(242,	241, 228);
 }
 
-h1 {
-   display: flex; 
-   justify-content: center;
-   font-family: 'Roboto', sans-serif;
-   font-size: 72pt;
+.header {
+    height: 100vh;
+    background-image:
+    url('https://i.imgur.com/sN5WXA4.jpg');
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
-a {
-    color: rgb(0, 62, 53);
-    font-family: 'Roboto', sans-serif;
-    font-size: larger;
-    display: flex;
-    justify-content: center;
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
-a:hover {
-    color: black;
+.heading-primary {
+    color: rgb(242,	241, 228);
+    text-transform: uppercase;
+
+    backface-visibility: hidden;
+    margin-bottom: 30px;
 }
 
-.container {
-    display: flex;
-    justify-content: space-evenly;
+.heading-primary-main {
+    display: block;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 5px;
 }
 
-form {
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    flex-direction: column;
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
 }
 
-img {
-    border-radius: 5%;
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-img.right {
-	transform: scaleX(-1);
-	filter: FlipH;
-	-ms-filter: "FlipH";
-	float: none;
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: rgb(242,	241, 228);
+    color: #777;
+  font-size: 14px;
 }
