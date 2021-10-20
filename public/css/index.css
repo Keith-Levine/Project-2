@@ -3,12 +3,11 @@ body {
 }
 
 #add_recipe {
-    /* display: flex; */
-    margin-top: 20px;
-    margin-left: 20px;
+    display: flex;
     font-family: 'Roboto', sans-serif;
     font-size: xx-large;
-    align-content: center;
+    margin-left: 10px;
+    justify-content: center;
 }
 
 a {
