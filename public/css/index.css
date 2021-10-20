@@ -47,6 +47,8 @@ li {
     background-color: cornsilk;
     border-radius: 10%;
     border: 1px solid grey;
+    max-height: 25vh;
+    max-width: 25vw;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i');
