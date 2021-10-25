@@ -20,8 +20,8 @@ As a user, I should be able to delete a recipe.
 
 [Keke's Cooking Page](https://enigmatic-everglades-87572.herokuapp.com/)
 
-<h2>Stretch Goals</h2>
+<!-- <h2>Stretch Goals</h2>
 
 Complete one to many relationships for searchability. 
 
-Add admin login so recipes can only be edited or deleted by admin.
+Add admin login so recipes can only be edited or deleted by admin. -->
