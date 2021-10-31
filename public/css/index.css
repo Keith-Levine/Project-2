@@ -2,63 +2,6 @@ body {
   background-color: #D2B48C;	
 }
 
-#add_recipe {
-  display: flex;
-  font-family: 'Roboto', sans-serif;
-  font-size: xx-large;
-  margin-left: 10px;
-  justify-content: center;
-}
-
-a {
-  text-decoration: none;
-  color: rgb(0, 62, 53);
-}
-
-a:hover {
-  color: black;
-}
-
-img {
-  width:  200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 100px;
-}
-
-ul {
-  display: flex;
-  justify-content: space-evenly;
-  list-style-type: none;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-li {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 40px;
-  margin: 40px;
-  line-height: 50px;
-  font-family: 'Roboto', sans-serif;
-  font-size: x-large;
-  background-color: #CBAB58;
-  border-radius: 10%;
-  border: 1px solid grey;
-}
-
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i');
-html,body{
-  margin:0;
-  height:120%;
-  font-family: 'Josefin Sans', sans-serif;
-}
-
-a {
-  text-decoration:none
-}
-
 .header {
   position:relative;
   overflow:hidden;
@@ -192,6 +135,63 @@ a {
 .twtr{
   margin-top:100px
 }.btn.twtr:after{content:"\1F426";padding-left:5px}
+
+#add_recipe {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  font-size: xx-large;
+  margin-left: 10px;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 62, 53);
+}
+
+a:hover {
+  color: black;
+}
+
+img {
+  width:  200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 100px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  margin: 40px;
+  line-height: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-size: x-large;
+  background-color: #CBAB58;
+  border-radius: 10%;
+  border: 1px solid grey;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i');
+html,body{
+  margin:0;
+  height:120%;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+a {
+  text-decoration:none
+}
 
 a.button7{
   display:inline-block;
