@@ -136,44 +136,44 @@ body {
   margin-top:100px
 }.btn.twtr:after{content:"\1F426";padding-left:5px}
 
-#add_recipe {
+/* #add_recipe {
   display: flex;
   font-family: 'Roboto', sans-serif;
   font-size: xx-large;
   margin-left: 10px;
   justify-content: center;
-}
+} */
 
-a {
+/* a {
   text-decoration: none;
   color: rgb(0, 62, 53);
-}
+} */
 
-a:hover {
+/* a:hover {
   color: black;
-}
+} */
 
-img {
+/* img {
   width:  200px;
   height: 200px;
   object-fit: cover;
   border-radius: 100px;
-}
+} */
 
-ul {
+/* ul {
   display: flex;
   justify-content: space-evenly;
   list-style-type: none;
   flex-wrap: wrap;
   align-items: center;
-}
+} */
 
 li {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 40px;
-  margin: 40px;
+  /* padding: 40px;
+  margin: 40px; */
   line-height: 50px;
   font-family: 'Roboto', sans-serif;
   font-size: x-large;
@@ -218,3 +218,55 @@ a.button7:active{
     margin:0.4em auto;
   }
 }
+
+.card{
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+padding: 14px 80px 18px 36px;
+cursor: pointer;
+}
+
+.card:hover{
+   transform: scale(1.05);
+box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.card__title{
+font-weight: 600;
+}
+
+.card img{
+/* position: absolute; */
+/* top: 20px;
+right: 15px; */
+max-height: 120px;
+}
+
+/* .card-1{
+background-image: url(https://ionicframework.com/img/getting-started/ionic-native-card.png);
+    background-repeat: no-repeat;
+  background-position: right;
+  background-size: 80px;
+}
+
+.card-2{
+ background-image: url(https://ionicframework.com/img/getting-started/components-card.png);
+    background-repeat: no-repeat;
+  background-position: right;
+  background-size: 80px;
+}
+
+.card-3{
+ background-image: url(https://ionicframework.com/img/getting-started/theming-card.png);
+    background-repeat: no-repeat;
+  background-position: right;
+  background-size: 80px;
+} */
+
+@media(max-width: 990px){
+.card{
+  margin: 20px;
+}
+} 
